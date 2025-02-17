@@ -1,91 +1,64 @@
-# VocabValt
+# PayEase
 
-## Project Overview
-VocabValt is a vocabulary-building web application designed for students. Users can search for words and view comprehensive details, including:
-- Word name
-- Hindi meaning
-- Part of speech
-- Example sentences
-- Definitions
-- Difficulty level
-- An illustrative image representing the word's meaning
-
-### Additional Features:
-- Filters to search words by **part of speech** and **difficulty level**
-- Save difficult words into personal containers (session-based storage)
-- Pagination for better word browsing experience
-- Offline coaching centers can advertise their courses and update details
-- Students can find nearby offline coaching centers with filters based on **city, fees, and duration**
-- Public API to create **word guessing games** and fetch word definitions within an IDE
+## Description
+PayEase is a dummy money transaction web application similar to PhonePe. Users can transfer money using various methods such as account number, phone number, or UPI ID. The project generates transaction histories for both sender and receiver accounts and supports multiple account management. Users can also perform mobile recharges and check their balance securely. Additionally, PayEase functions as a payment gateway that can be integrated into other projects to facilitate transactions via API.
 
 ## Features
-- Built-in Django authentication
-- Save difficult words using custom containers
-- Comprehensive word details with images
-- Advertise and list offline coaching centers
-- Find coaching centers based on location, fees, and duration
-- API for word-guessing game creation
-- Advanced filtering options
-
-## Installation & Setup
-### Virtual Environment
-VocabValt uses a **virtual environment (venv)** for package management. Make sure to activate it before running the project.
-
-### Setup Commands:
-```sh
-# Clone the repository
-git clone <repo-url>
-cd VocabValt
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # For Linux/macOS
-venv\Scripts\activate     # For Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run migrations
-python manage.py migrate
-
-# Start the server
-python manage.py runserver 5555
-```
+- Send money using account number, phone number, or UPI ID.
+- Transaction history for both sender and receiver.
+- Mobile recharge functionality with automatic balance deduction.
+- Users can add multiple accounts with a secure 6-digit password.
+- Check balance of each account using the password.
+- Filter transaction history by minimum amount, maximum amount, date, debit, and credit.
+- Payment Gateway feature: Integrate API for seamless transactions in external projects.
+- Secure authentication using Django's built-in authentication system.
+- Proper error handling and validation using Django Forms.
 
 ## Technologies Used
-- **Django 5** (Backend framework)
-- **MySQL** (Database)
-- **HTML, CSS, Bootstrap, JavaScript** (Frontend)
-- **Git** (Version control)
+- **Backend:** Django (Python)
+- **Frontend:** HTML, CSS, Bootstrap, JavaScript
+- **Database:** SQLite
+- **API:** Django Rest Framework API for Payment Gateway feature
+- **Environment:** Virtual Environment (venv)
+
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd PayEase
+   ```
+3. Create and activate a virtual environment:
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   venv\Scripts\activate  # On Windows
+   ```
+4. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+5. Run database migrations:
+   ```sh
+   python manage.py migrate
+   ```
+6. Start the Django development server:
+   ```sh
+   python manage.py runserver
+   ```
+7. Access the application at `http://127.0.0.1:8000/`.
 
 ## Usage
-Run the project using:
-```sh
-python manage.py runserver 5555
-```
+- Register/Login to the PayEase platform.
+- Add multiple accounts by providing account details and setting a password.
+- Perform money transactions and view transaction history.
+- Use the payment gateway feature by integrating the provided API into another project.
+- Securely check balances and apply filters to analyze transactions.
 
-## API Documentation
-VocabValt offers an API that allows developers to:
-- Fetch word definitions
-- Create custom word-guessing games
-
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository
-2. Create a new branch (`feature-branch`)
-3. Make your changes and commit them
-4. Open a pull request
-
-## Deployment
-Currently, the project is running locally. Deployment plans include:
-- Hosting on **Heroku, AWS, or DigitalOcean**
-- Setting up proper **CI/CD pipelines**
-
-
-
-
-### Future Enhancements:
-- Deploying the project online
-- Adding more word-related interactive features
-- Improving UI/UX for better student experience
+## Configuration
+- Ensure the virtual environment is activated before running the project.
+- Configure API settings for payment gateway integration.
+- Modify Django settings if deploying to production.
 
