@@ -1,5 +1,5 @@
 # PayEase
-
+[![Demo Video](https://img.shields.io/badge/Watch-Demo-blue?style=for-the-badge)](https://drive.google.com/file/d/1rmjsOZTqseRoh0Ngc4z-4ocRmjWCB7dj/view?usp=drive_link)
 ## Description
 PayEase is a dummy money transaction web application similar to PhonePe. Users can transfer money using various methods such as account number, phone number, or UPI ID. The project generates transaction histories for both sender and receiver accounts and supports multiple account management. Users can also perform mobile recharges and check their balance securely. Additionally, PayEase functions as a payment gateway that can be integrated into other projects to facilitate transactions via API.
 
